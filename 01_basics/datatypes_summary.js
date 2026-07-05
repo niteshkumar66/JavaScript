@@ -20,7 +20,7 @@ let userEmail; // undefined
 const Id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(typeof Id);
+// console.log(typeof Id);
 
 
 // console.log(Id === anotherId);
@@ -56,6 +56,32 @@ const myFunction = function (){
     console.log("Hello World");
 }
 
-console.log(typeof myFunction);  // datatype : function object
-console.log(typeof heros);  // datatype : object 
-console.log(typeof myObj);  // datatype : object 
+// console.log(typeof myFunction);  // datatype : function object
+// console.log(typeof heros);  // datatype : object 
+// console.log(typeof myObj);  // datatype : object 
+
+
+
+// ****************************************************************
+
+// Stack Memory (Primitive). &   Heap Memory (Non-Primitive)
+//    (copy get changed)            //refrence type (original also change)
+let myYoutubeName = "toonparivaar"
+let anotherName = myYoutubeName
+anotherName = "rajatdalaldotcom"
+
+console.log(anotherName);
+console.log(myYoutubeName);
+
+let user1 = {
+    email: "user@gmail.com",
+    upi: "user@ybi"
+
+}
+
+let user2 = user1
+
+user2.email = "googleuser@gmail.com"
+
+console.log(user1.email);
+console.log(user2.email);
