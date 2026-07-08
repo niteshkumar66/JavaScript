@@ -32,7 +32,7 @@ const obj2 = {3: "c" , 4: "d"}
 // const obj3 = Object.assign({} , obj1, obj2)
 
 const obj3 = {...obj1 , ...obj2}
-console.log(obj3);
+// console.log(obj3);
 
 
 const users = [
@@ -54,12 +54,43 @@ const users = [
     },
 ]
 
-console.log(users[1].email);
+// console.log(users[1].email);
 
-console.log(twitterUser);
+// console.log(twitterUser);
 
-console.log(Object.keys(twitterUser));
-console.log(Object.values(twitterUser));
-console.log(Object.entries(twitterUser));
+// console.log(Object.keys(twitterUser));
+// console.log(Object.values(twitterUser));
+// console.log(Object.entries(twitterUser));
 
-console.log(twitterUser.hasOwnProperty('isLoggedIn'));
+// console.log(twitterUser.hasOwnProperty('isLoggedIn'));
+
+
+
+const course = {
+    courseName : "JS",
+    courseFee : 999,
+    courseInstructor : "Hitesh Chaudhary"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+// ************************** JSON *******************************
+
+// {
+//     "name": "nitesh kuamr",
+//     "courseName" : "js in hindi",
+//     "price" : 999
+// }
+
+[
+    {},
+    {},
+    {},
+    {}
+]
