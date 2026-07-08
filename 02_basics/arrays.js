@@ -35,28 +35,28 @@ const arr2 = new Array(1,2,3,"hero","baacha")
 // console.log(myArr.includes('9'));
 
 
-// const Arr3 = myArr.join()
+const Arr3 = myArr.join()
 
 
 // console.log(myArr);
-// console.log(Arr3);
+console.log(Arr3);
 
 
 // slice , splice 
 
-console.log("A " , myArr);
+// console.log("A " , myArr);
 
 const myn1 = myArr.slice(1,5)   // (starting , ending-1) or (starting)
 
 
-console.log(myn1)
-console.log("B ", myArr);  
+// console.log(myn1)
+// console.log("B ", myArr);  
 
 
 const myn2 = myArr.splice(1,5);
 
-console.log("C " , myArr);
+// console.log("C " , myArr);
 // console.log("C " , newArr);
-console.log(myn2);
+// console.log(myn2);
 
 

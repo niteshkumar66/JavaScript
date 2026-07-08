@@ -17,7 +17,8 @@ const dcHeros = ["superman", "batman", "flash"]
 
 // spread operator combines more than one array [...arr1, ...arr2, ...arr3]
 
-const allHeros = [...marvelHeros, ...dcHeros]  
+// const allHeros = [...marvelHeros, ...dcHeros] 
+console.log([...marvelHeros, ...dcHeros])
 // console.log(allHeros);
 
 
@@ -39,6 +40,6 @@ let score1 = 100
 let score2 = 200
 let score3 = 300
 
-console.log(Array.of(score1, score2, score3))   //concatinate values as array
+// console.log(Array.of(score1, score2, score3))   //concatinate values as array
 
 // console.log(Array.from(score1, score2, score3)) // doesn't work 
