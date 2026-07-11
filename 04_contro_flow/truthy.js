@@ -22,13 +22,13 @@
 
 const userEmail = []
 
-if (userEmail) {
-    console.log("Got User Email");
+// if (userEmail) {
+//     console.log("Got User Email");
     
-} else {
-    console.log("Don't have User Email");
+// } else {
+//     console.log("Don't have User Email");
     
-}
+// }
 
 // falsy values 
 
@@ -38,7 +38,35 @@ if (userEmail) {
 
 // "0" , 'false' , " " , [] , {} , function(){} ,
 
-if(userEmail.length === 0){
-    console.log("Array is empty");
+// if(userEmail.length === 0){
+//     console.log("Array is empty");
+    
+// }
+
+const emptyObject = {}
+
+if (Object.keys(emptyObject).length === 0) {
+    // console.log("Object is empty");
     
 }
+
+
+// Nullish coalescing Operator (??): null undefined  
+
+let val1;
+// val1 = 5 ?? 10
+// val1 = null ?? 10
+// val1 = 15 ?? undefined
+val1 = null ?? 20 ?? 15
+
+// console.log(val1);
+
+
+
+// Terniary Operator 
+
+// condition ? true : false 
+
+const iceTeaPrice = 100
+
+iceTeaPrice <= 80 ? console.log("Too costly") : console.log("Affordable");
