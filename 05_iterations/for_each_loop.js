@@ -23,10 +23,11 @@ const coding = ['js' , 'ruby', 'py', 'java', 'cpp']
 
 // coding.forEach(printMe)
 
-// coding.forEach( (item , index , arr) => {
-//     console.log(item , index , arr);
+coding.forEach( (item , index , arr) => {
+    console.log(item , index , arr);
     
-// } )
+} )
+
 
 const myCoding = [
     {
@@ -44,6 +45,6 @@ const myCoding = [
 ]
 
 myCoding.forEach( (item) => {
-    console.log(item.languageFileName);
+    // console.log(item.languageFileName);
     
 } )
