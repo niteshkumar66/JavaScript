@@ -5,10 +5,11 @@ const myObj = {
     swift : "swift by apple "
 }
 
-// for (const key in myObj) {
-//      console.log(myObj[key]);
+for (const key in myObj) {
+        console.log(key);
+     console.log(myObj[key]);
 //      console.log(`${key} has the value : ${myObj[key]}`);
-// }
+}
 
 const programming = ['js' , 'java' , 'py', 'cpp']
 
