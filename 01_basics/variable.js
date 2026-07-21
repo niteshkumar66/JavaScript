@@ -19,6 +19,7 @@ Because of issue in block scope and functional scope
 
 console.table([accountId , accountEmail , accountPass , accountCity , accountState])
 
+let a;
+a = 5 + '5'
 
-
- 
+console.log(a);
