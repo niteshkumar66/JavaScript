@@ -44,7 +44,8 @@ const promiseFour = new Promise(function(resolve , reject){
     }, 1000)
 })
 
-promiseFour.then((user) => {
+promiseFour
+.then((user) => {
     console.log(user);
     return user.userName
 }).then((username) => {
@@ -68,5 +69,40 @@ const promiseFive = new Promise((resolve , reject) => {
 })
 
 async function consumePromiseFive(){
-    await promiseFive()
+    try {
+        const response = await promiseFive
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+        
+    }
+    
 }
+
+consumePromiseFive()
+
+
+// async function getAllUsers (){
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         // console.log(response);
+//         const data = await response.json()
+//         console.log(data);
+//     } catch (error) {
+//         console.log("E: " , error);
+        
+//     }
+    
+// }
+
+// getAllUsers()
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+    
+})
+.catch((error) => console.log(error))
