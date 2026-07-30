@@ -7,3 +7,4 @@ console.log(a)
 
 console.log("Event Basics");
 
+console.log("Another Day of JavaScript")
